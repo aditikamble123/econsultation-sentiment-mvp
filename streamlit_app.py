@@ -310,21 +310,29 @@ def main():
         
         # Sample data option
         if st.button("Load Sample Data"):
-            sample_data = pd.DataFrame({
-                'comment_id': [1, 2, 3, 4, 5],
-                'stakeholder_name': ['John Doe', 'Jane Smith', 'ACME Corp', 'John Doe', 'Green Initiative'],
-                'comment_text': [
-                    'This provision will greatly improve transparency in the sector.',
-                    'Concerned about the implementation timeline being too aggressive.',
-                    'We support this initiative as it aligns with industry best practices.',
-                    'The cost implications need further consideration.',
-                    'Excellent proposal for environmental sustainability.'
-                ],
-                'provision_reference': ['Section 2.1', 'Section 3.2', 'Section 2.1', 'Section 3.2', 'Section 4.1']
-            })
-            st.session_state['uploaded_data'] = sample_data
-            st.success("Sample data loaded!")
-            st.rerun()
+            try:
+                # Load the sample_data.csv file
+                sample_data = pd.read_csv('sample_data.csv')
+                st.session_state['uploaded_data'] = sample_data
+                st.success(f"Sample data loaded! ({len(sample_data)} comments)")
+                st.rerun()
+            except FileNotFoundError:
+                # Fallback to hardcoded sample if file not found
+                sample_data = pd.DataFrame({
+                    'comment_id': [1, 2, 3, 4, 5],
+                    'stakeholder_name': ['John Doe', 'Jane Smith', 'ACME Corp', 'John Doe', 'Green Initiative'],
+                    'comment_text': [
+                        'This provision will greatly improve transparency in the sector.',
+                        'Concerned about the implementation timeline being too aggressive.',
+                        'We support this initiative as it aligns with industry best practices.',
+                        'The cost implications need further consideration.',
+                        'Excellent proposal for environmental sustainability.'
+                    ],
+                    'provision_reference': ['Section 2.1', 'Section 3.2', 'Section 2.1', 'Section 3.2', 'Section 4.1']
+                })
+                st.session_state['uploaded_data'] = sample_data
+                st.success("Sample data loaded!")
+                st.rerun()
     
     # Main content area
     if 'uploaded_data' not in st.session_state:
