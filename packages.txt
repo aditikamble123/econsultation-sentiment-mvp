@@ -1,3 +1,0 @@
-# System packages required for the app
-# These will be installed by Streamlit Cloud
-build-essential
