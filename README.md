@@ -1,4 +1,4 @@
-# E-consultation Sentiment Analysis MVP 📊
+# E-consultation Sentiment Analysis MVP 
 
 A powerful Streamlit web application for analyzing stakeholder comments and feedback from e-consultation processes using Natural Language Processing (NLP) and sentiment analysis.
 
@@ -6,25 +6,25 @@ A powerful Streamlit web application for analyzing stakeholder comments and feed
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 🌟 Features
+## Features
 
-- **🎭 Sentiment Analysis**: Automatically classify comments as positive, negative, or neutral using TextBlob
-- **📝 Text Summarization**: Generate concise summaries of stakeholder feedback
-- **☁️ Word Cloud Visualization**: Visual representation of frequently used terms
-- **📈 Statistical Insights**: Detailed analytics and charts using Plotly
-- **📑 Provision-wise Analysis**: Sentiment breakdown by document sections
-- **👥 Stakeholder Group Analysis**: Analysis by stakeholder categories
-- **💾 Export Results**: Download analysis results in CSV format
-- **🎨 Interactive Dashboard**: Modern, user-friendly Streamlit interface
+- Sentiment Analysis**: Automatically classify comments as positive, negative, or neutral using TextBlob
+- Text Summarization**: Generate concise summaries of stakeholder feedback
+- Word Cloud Visualization**: Visual representation of frequently used terms
+- Statistical Insights**: Detailed analytics and charts using Plotly
+- Provision-wise Analysis**: Sentiment breakdown by document sections
+- Stakeholder Group Analysis**: Analysis by stakeholder categories
+- Export Results**: Download analysis results in CSV format
+- Interactive Dashboard**: Modern, user-friendly Streamlit interface
 
-## 🚀 Live Demo
+## Live Demo
 
-Try the app online: [View on Streamlit Cloud](https://econsultation-sentiment-mvp.streamlit.app/)
+Try the app online: https://appapppy-phf7nqyfrl66cotfapobfb.streamlit.app/
 
 ## 📸 Screenshots
 
-![Dashboard Preview](screenshots/dashboard.png)
-*Main Dashboard Interface*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6135000-3314-40c0-8dfd-3af91dbae8de" />
+
 
 ## 🛠️ Technology Stack
 
@@ -35,7 +35,7 @@ Try the app online: [View on Streamlit Cloud](https://econsultation-sentiment-mv
 - **Visualization**: Plotly, Matplotlib, WordCloud
 - **Deployment**: Streamlit Cloud / Render / Railway
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ Try the app online: [View on Streamlit Cloud](https://econsultation-sentiment-mv
    http://localhost:8501
    ```
 
-## 📊 Usage
+## Usage
 
 ### Data Format
 
@@ -164,7 +164,7 @@ primaryColor = "#667eea"
 backgroundColor = "#ffffff"
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 econsultation-sentiment-mvp/
@@ -179,7 +179,7 @@ econsultation-sentiment-mvp/
 └── README.md               # This file
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -189,24 +189,24 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - TextBlob for sentiment analysis
 - Streamlit for the amazing framework
 - NLTK for natural language processing
 - All contributors and users
 
-## 📧 Contact
+## Contact
 
 Aditi Kamble - [GitHub Profile](https://github.com/aditikamble123)
 
 Project Link: [https://github.com/aditikamble123/econsultation-sentiment-mvp](https://github.com/aditikamble123/econsultation-sentiment-mvp)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -225,7 +225,7 @@ Project Link: [https://github.com/aditikamble123/econsultation-sentiment-mvp](ht
    - Increasing system memory
    - Using cloud deployment
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Multi-language support
 - [ ] Advanced ML models (BERT, GPT)
