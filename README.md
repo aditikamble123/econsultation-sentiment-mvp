@@ -8,14 +8,14 @@ A powerful Streamlit web application for analyzing stakeholder comments and feed
 
 ## Features
 
-- Sentiment Analysis**: Automatically classify comments as positive, negative, or neutral using TextBlob
-- Text Summarization**: Generate concise summaries of stakeholder feedback
-- Word Cloud Visualization**: Visual representation of frequently used terms
-- Statistical Insights**: Detailed analytics and charts using Plotly
-- Provision-wise Analysis**: Sentiment breakdown by document sections
-- Stakeholder Group Analysis**: Analysis by stakeholder categories
-- Export Results**: Download analysis results in CSV format
-- Interactive Dashboard**: Modern, user-friendly Streamlit interface
+- Sentiment Analysis: Automatically classify comments as positive, negative, or neutral using TextBlob
+- Text Summarization: Generate concise summaries of stakeholder feedback
+- Word Cloud Visualization: Visual representation of frequently used terms
+- Statistical Insights: Detailed analytics and charts using Plotly
+- Provision-wise Analysis: Sentiment breakdown by document sections
+- Stakeholder Group Analysis: Analysis by stakeholder categories
+- Export Results: Download analysis results in CSV format
+- Interactive Dashboard: Modern, user-friendly Streamlit interface
 
 ## Live Demo
 
@@ -29,12 +29,12 @@ Try the app online: https://appapppy-phf7nqyfrl66cotfapobfb.streamlit.app/
 
 ## 🛠️ Technology Stack
 
-- **Frontend**: Streamlit
-- **Backend**: Python 3.8+
-- **NLP**: TextBlob, NLTK
-- **Data Processing**: Pandas, NumPy
-- **Visualization**: Plotly, Matplotlib, WordCloud
-- **Deployment**: Streamlit Cloud / Render / Railway
+- Frontend: Streamlit
+- Backend: Python 3.8+
+- NLP: TextBlob, NLTK
+- Data Processing: Pandas, NumPy
+- Visualization: Plotly, Matplotlib, WordCloud
+- Deployment: Streamlit Cloud / Render / Railway
 
 ## Installation
 
@@ -45,13 +45,13 @@ Try the app online: https://appapppy-phf7nqyfrl66cotfapobfb.streamlit.app/
 
 ### Local Setup
 
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
    git clone https://github.com/aditikamble123/econsultation-sentiment-mvp.git
    cd econsultation-sentiment-mvp
    ```
 
-2. **Create a virtual environment** (recommended):
+2. Create a virtual environment (recommended):
    ```bash
    python -m venv venv
    
@@ -62,22 +62,22 @@ Try the app online: https://appapppy-phf7nqyfrl66cotfapobfb.streamlit.app/
    source venv/bin/activate
    ```
 
-3. **Install dependencies**:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Download NLTK data**:
+4. Download NLTK data:
    ```bash
    python -m textblob.download_corpora
    ```
 
-5. **Run the Streamlit app**:
+5. Run the Streamlit app:
    ```bash
    streamlit run streamlit_app.py
    ```
 
-6. **Open your browser** and navigate to:
+6. Open your browser and navigate to:
    ```
    http://localhost:8501
    ```
@@ -97,13 +97,13 @@ Prepare your CSV file with the following columns:
 
 ### Using the Application
 
-1. **Upload Data**: Click "Browse files" to upload your CSV
-2. **View Analysis**: The app automatically processes and displays:
+1. Upload Data: Click "Browse files" to upload your CSV
+2. View Analysis: The app automatically processes and displays:
    - Overall sentiment distribution
    - Detailed sentiment scores
    - Word clouds
    - Statistical summaries
-3. **Export Results**: Download processed data as CSV
+3. Export Results: Download processed data as CSV
 
 ## 🚢 Deployment
 
@@ -211,17 +211,17 @@ Project Link: [https://github.com/aditikamble123/econsultation-sentiment-mvp](ht
 
 ### Common Issues
 
-1. **ModuleNotFoundError**: Ensure all dependencies are installed:
+1. ModuleNotFoundError: Ensure all dependencies are installed:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **NLTK Data Error**: Download required data:
+2. NLTK Data Error: Download required data:
    ```bash
    python -m textblob.download_corpora
    ```
 
-3. **Memory Issues**: For large datasets, consider:
+3. Memory Issues: For large datasets, consider:
    - Processing in batches
    - Increasing system memory
    - Using cloud deployment
