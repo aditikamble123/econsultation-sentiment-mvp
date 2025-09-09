@@ -13,14 +13,23 @@ import plotly.express as px
 from io import BytesIO
 import base64
 
-# Download required NLTK data
+# Download required NLTK data at startup
 import nltk
+import ssl
+
 try:
-    nltk.download('punkt', quiet=True)
-    nltk.download('brown', quiet=True)
-    nltk.download('stopwords', quiet=True)
-except:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
     pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+# Download required NLTK data
+for corpus in ['punkt', 'brown', 'stopwords', 'averaged_perceptron_tagger', 'punkt_tab']:
+    try:
+        nltk.download(corpus, quiet=True)
+    except:
+        pass
 
 # Import our modules
 from sentiment_analyzer import SentimentAnalyzer

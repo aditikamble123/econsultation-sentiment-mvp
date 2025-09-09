@@ -1,17 +1,8 @@
-# Core dependencies for Streamlit app
 streamlit
 pandas
-numpy
 plotly
-
-# NLP and Text Processing
 textblob
 nltk
 wordcloud
-
-# Visualization
 matplotlib
-pillow
-
-# Additional utilities
-openpyxl  # For Excel file support
+openpyxl
