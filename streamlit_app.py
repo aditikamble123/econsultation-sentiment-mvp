@@ -267,7 +267,7 @@ def display_results(results):
         
         # Detailed sentiments table
         st.subheader("Comment-level Sentiment Analysis")
-        detailed_df = pd.DataFrame(results['detailed_sentiments'])
+        detailed_df = results['detailed']  # Fixed: using correct key
         st.dataframe(detailed_df, use_container_width=True)
         
         # Download options
