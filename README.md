@@ -23,7 +23,8 @@ Try the app online: https://appapppy-phf7nqyfrl66cotfapobfb.streamlit.app/
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d6135000-3314-40c0-8dfd-3af91dbae8de" />
+<img width="1920" height="833" alt="Screenshot (585)" src="https://github.com/user-attachments/assets/41f6c051-9d30-4a59-8d75-7cc3aecf0395" />
+
 
 
 ## 🛠️ Technology Stack
