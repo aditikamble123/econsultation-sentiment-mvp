@@ -229,8 +229,7 @@ def display_results(results):
             st.metric("Neutral", f"{sentiment_summary.get('neutral', 0)} ({neutral_pct:.1f}%)")
         
         # Charts
-        if 'provision_bar' in results['charts']:
-            st.plotly_chart(results['charts']['provision_bar'], use_container_width=True)
+        # Removed provision bar chart as requested
         
         if 'stakeholder_bar' in results['charts']:
             st.plotly_chart(results['charts']['stakeholder_bar'], use_container_width=True)
