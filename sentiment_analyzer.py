@@ -153,8 +153,13 @@ class SentimentAnalyzer:
                 'total': len(stakeholder_data)
             }
         
+        # Convert sentiment distribution keys to lowercase for consistency
+        sentiment_summary = {}
+        for key, value in overall_stats['sentiment_distribution'].items():
+            sentiment_summary[key.lower()] = value
+        
         return {
-            'summary': overall_stats['sentiment_distribution'],
+            'summary': sentiment_summary,
             'detailed': detailed_results,
             'by_provision': provision_sentiment,
             'by_stakeholder': stakeholder_sentiment,
