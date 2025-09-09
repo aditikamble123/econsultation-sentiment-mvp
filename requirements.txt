@@ -5,3 +5,4 @@ nltk
 wordcloud
 matplotlib
 openpyxl
+textblob
