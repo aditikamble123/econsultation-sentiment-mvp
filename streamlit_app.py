@@ -13,6 +13,15 @@ import plotly.express as px
 from io import BytesIO
 import base64
 
+# Download required NLTK data
+import nltk
+try:
+    nltk.download('punkt', quiet=True)
+    nltk.download('brown', quiet=True)
+    nltk.download('stopwords', quiet=True)
+except:
+    pass
+
 # Import our modules
 from sentiment_analyzer import SentimentAnalyzer
 from text_summarizer import TextSummarizer
@@ -79,7 +88,7 @@ def perform_analysis(df):
         # 1. Sentiment Analysis
         sentiment_results = sentiment_analyzer.analyze(df)
         results['sentiment_summary'] = sentiment_results['summary']
-        results['detailed_sentiments'] = sentiment_results['detailed']
+        results['detailed'] = sentiment_results['detailed']  # Fixed: using consistent key
         results['sentiment_by_provision'] = sentiment_results['by_provision']
         results['sentiment_by_stakeholder'] = sentiment_results['by_stakeholder']
     
